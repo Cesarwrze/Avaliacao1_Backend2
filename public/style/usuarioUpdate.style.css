@@ -1,0 +1,14 @@
+html,
+body {
+    background-image: url('/img/background5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.error-message {
+    font-size: 0.875rem;
+    color: #dc3545;
+    margin-top: 5px;
+}

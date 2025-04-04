@@ -1,0 +1,99 @@
+html,
+body {
+    background-image: url('/img/background4.png');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Numans', sans-serif;
+}
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-quantidade {
+    height: 30px;
+    max-width: 60px;
+    text-align: center;
+}
+
+.input-quantidade::-webkit-outer-spin-button,
+.input-quantidade::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-quantidade[type=number] {
+    -moz-appearance: textfield;
+}
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table th, .table td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 200px;
+}
+
+.table th:nth-child(1), .table td:nth-child(1) {
+    width: 12%;
+}
+
+.table th:nth-child(2), .table td:nth-child(2) { 
+    width: 8%;
+}
+
+.table th:nth-child(3), .table td:nth-child(3) {
+    width: 20%;
+}
+
+.table th:nth-child(4), .table td:nth-child(4) {
+    width: 8%;
+}
+
+.table th:nth-child(5), .table td:nth-child(5) {
+    width: 8%;
+}
+
+.table th:nth-child(6), .table td:nth-child(6) { 
+    width: 8%;
+}
+
+.table th:nth-child(7), .table td:nth-child(7) {
+    width: 36%;
+}
+
+.text-truncate-custom {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+}
+
+.text-truncate-custom:hover {
+    white-space: normal;
+    overflow: visible;
+    position: relative;
+}
+
+.input-quantidade {
+    width: 60px !important;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    .controle-quantidade {
+        flex-wrap: nowrap;
+    }
+}

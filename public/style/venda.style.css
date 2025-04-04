@@ -1,0 +1,74 @@
+html,
+body {
+    background-image: url('/img/background4.png');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Numans', sans-serif;
+}
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table th, .table td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 200px;
+}
+
+.table th:nth-child(1), .table td:nth-child(1) {
+    width: 10%;
+}
+
+.table th:nth-child(2), .table td:nth-child(2) {
+    width: 35%;
+}
+
+.table th:nth-child(3), .table td:nth-child(3) {
+    width: 13%;
+}
+
+.table th:nth-child(4), .table td:nth-child(4) {
+    width: 13%;
+}
+
+.table th:nth-child(5), .table td:nth-child(5) {
+    width: 9%;
+}
+
+.table th:nth-child(6), .table td:nth-child(6) {
+    width: 15%;
+}
+
+.text-truncate-custom {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: block;
+}
+
+.text-truncate-custom:hover {
+    white-space: normal;
+    overflow: visible;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+    
+    .btn-group-responsive {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .btn-group-responsive .btn {
+        width: 100%;
+        margin: 0 !important;
+    }
+}
